@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router baseline="/me">
       <div className="flex flex-col min-h-screen">
         {/* Navigation Bar */}
         <NavBar />

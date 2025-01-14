@@ -10,7 +10,7 @@ function Home() {
       <HeroSection
         title="Bienvenue sur mon portfolio"
         subtitle="Explorez mes projets, certifications et compétences."
-        backgroundImage="/assets/hero3.jpeg"
+        backgroundImage={`${process.env.PUBLIC_URL}/assets/hero3.jpeg`}
       />
 
       {/* Introduction Section */}
