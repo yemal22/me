@@ -1,25 +1,29 @@
 // src/pages/About.jsx
 import React from 'react';
-import Technologies from '../components/Technologies';
+import TechnologiesBanner from '../components/TechnologiesBanner';
+import EducationSection from '../components/EducationSection';
 
 function About() {
   return (
     <section className="p-8">
-      <h1 className="text-3xl font-bold mb-4">À propos de moi</h1>
-      <p>
-        Je suis Yémalin Emile Morel KPAVODE, passionné par l'intelligence artificielle et la science des données. Mon objectif est de résoudre des problèmes pratiques à travers la technologie.
+      <h1 className="text-3xl font-bold mb-6">À propos de moi</h1>
+      <p className="mb-6 text-lg">
+        Je suis Yémalin Emile Morel KPAVODE, un passionné de l'intelligence artificielle et de la science des données.
+        Mon objectif est de résoudre des problèmes pratiques à travers des solutions technologiques innovantes. Avec une
+        formation solide en mathématiques et en technologies de l'information, je m'efforce de combiner rigueur
+        scientifique et créativité pour relever les défis complexes.
       </p>
-      <div className="mt-4">
-        <h2 className="text-2xl font-bold mb-2">Éducation</h2>
-        <ul className="list-disc pl-5">
-          <li>Licence en Mathématiques, FAST</li>
-          <li>Licence en TIC, IMSP</li>
-          <li>Formations diverses en Data Science et IA</li>
-        </ul>
+
+      {/* Section Éducation */}
+      <div className="mb-10">
+        <EducationSection />
       </div>
 
-      {/* Inclure la section Technologies */}
-      <Technologies />
+      {/* Section Technologies */}
+      <div className="mt-10">
+        <h2 className="text-2xl font-bold mb-4">Technologies maîtrisées</h2>
+        <TechnologiesBanner />
+      </div>
     </section>
   );
 }

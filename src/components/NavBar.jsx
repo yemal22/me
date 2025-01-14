@@ -8,7 +8,7 @@ function NavBar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
         <div className="text-white text-2xl font-extrabold font-sans">
-          <Link to="/">Yémalin Portfolio</Link>
+          <Link to="/">Morel KPAVODE</Link>
         </div>
 
         {/* Navigation Links */}
